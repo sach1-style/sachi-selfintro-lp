@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>さち｜暮らしの延長線上に、小さな仕事を育てる</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="パート×フリーランスママ。Canva・AIアート・noteで、暮らしの延長線上のストック収入を育てる試行錯誤の記録。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:title" content="さち｜暮らしの延長線上に、小さな仕事を育てる">
+<meta property="og:description" content="パート×フリーランスママの、暮らしの延長線上のストック収入づくり。">
+<meta property="og:image" content="https://sachi-selfintro-lp.vercel.app/ogp.jpg">
+<meta property="og:url" content="https://sachi-selfintro-lp.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&amp;family=Zen+Maru+Gothic:wght@400;500;700&amp;family=Klee+One:wght@400;600&amp;family=Caveat:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#684c2e}a:hover{color:#341d0b}
+.page{background-color:#fbfaf6;background-image:linear-gradient(rgba(139,175,107,.11) 1px,transparent 1px),linear-gradient(90deg,rgba(139,175,107,.11) 1px,transparent 1px);background-size:28px 28px}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.13)}}
+.kb{width:100%;height:100%;object-fit:cover;display:block;animation:kb 17s ease-in-out infinite alternate;transform-origin:52% 42%}
+.slotimg{display:block;width:100%;object-fit:cover}
+.works-gal{column-count:4;column-gap:18px}
+@media(max-width:1000px){.works-gal{column-count:3}}
+@media(max-width:680px){.works-gal{column-count:2}}
+.wk{break-inside:avoid;margin:0 0 20px;background:#ffffff;padding:10px 10px 12px;box-shadow:0 8px 20px rgba(52,29,11,.12)}
+.wk:nth-child(3n+1){transform:rotate(-1deg)}.wk:nth-child(3n){transform:rotate(1.1deg)}
+.wk .ph{overflow:hidden;background:#eef1e6}
+.wk .ph img{display:block;width:100%;height:auto;transition:transform .7s ease}
+.wk:hover .ph img{transform:scale(1.06)}
+.wk figcaption{margin:9px 2px 1px;font-family:'Klee One',cursive;font-size:12.5px;color:#684c2e;text-align:center}
+/* ===== 固定ヘッダー（ボタンの定位置） ===== */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:40;background:rgba(251,250,246,.9);backdrop-filter:blur(8px);border-bottom:1px solid rgba(104,76,46,.14)}
+.topbar .in{max-width:1120px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.topbar .logo b{font-family:'Zen Old Mincho',serif;font-size:22px;color:#341d0b}
+.topbar .logo span{font-family:'Caveat',cursive;font-size:19px;color:#684c2e}
+.topbar .hbtns{display:flex;align-items:center;gap:10px}
+.topbar .hb{display:inline-block;padding:10px 20px;border-radius:999px;background:#684c2e;color:#fff;font-weight:500;font-size:14px}
+.topbar .hb.ghost{background:#fff;border:1px solid #684c2e;color:#684c2e}
+.topbar .hb:hover{background:#523a22;color:#fff}.topbar .hb.ghost:hover{background:#f3ece0;color:#684c2e}
+@media(max-width:480px){.topbar .hb.ghost{display:none}.topbar .hb{padding:9px 15px;font-size:13px}.topbar .in{padding:10px 18px}}
+/* ===== ヒーロー：全面動画＋スクロールで文字出し ===== */
+.herowrap{position:relative;height:185vh}
+.hero{position:sticky;top:0;height:100vh;overflow:hidden}
+.hero video,.hero img.heromedia{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero img.heromedia{z-index:0}
+.hero video{z-index:1}
+.hero .scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(40,24,8,.5) 0%,rgba(40,24,8,.22) 38%,rgba(40,24,8,0) 64%),linear-gradient(0deg,rgba(40,24,8,.3) 0%,rgba(40,24,8,0) 42%)}
+.hero .wrapabs{position:absolute;inset:0;z-index:3;display:flex;align-items:center}
+.hero .inner{max-width:1120px;margin:0 auto;padding:0 28px;width:100%}
+.hero .ey{font-family:'Klee One',cursive;font-size:16px;color:#f3e6cf;margin:0 0 14px;text-shadow:0 1px 10px rgba(0,0,0,.4)}
+.hero h1{margin:0;font-family:'Zen Old Mincho',serif;font-weight:500;font-size:clamp(30px,4.6vw,48px);line-height:1.55;letter-spacing:.06em;color:#fff;text-shadow:0 2px 22px rgba(0,0,0,.45);max-width:16em}
+.hero .sub{margin:18px 0 0;color:#f4ecdf;font-size:16px;max-width:27em;text-shadow:0 1px 10px rgba(0,0,0,.4);line-height:1.9}
+.hero .cue{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:3;color:#fff;font-family:'Klee One',cursive;font-size:14px;text-shadow:0 1px 10px rgba(0,0,0,.45);animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,7px)}}
+@keyframes rise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@keyframes fadeout{from{opacity:1}to{opacity:0}}
+@supports (animation-timeline: scroll()){
+  .hero .reveal{opacity:0}
+  .hero .ey{animation:rise linear both;animation-timeline:scroll(root);animation-range:2vh 22vh}
+  .hero h1{animation:rise linear both;animation-timeline:scroll(root);animation-range:14vh 46vh}
+  .hero .sub{animation:rise linear both;animation-timeline:scroll(root);animation-range:38vh 66vh}
+  .hero .cue{animation:fadeout linear both;animation-timeline:scroll(root);animation-range:0 12vh}
+}
+@media (prefers-reduced-motion: reduce){.hero video{display:none}}
+/* ===== 商品画像カルーセル（スワイプで中身を複数枚） ===== */
+.caro{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;aspect-ratio:1000 / 1414;background:#eef1e6}
+.caro::-webkit-scrollbar{display:none}
+.caro>img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:center;display:block}
+.caro-hint{margin:10px 0 0;text-align:center}
+.caro-hint .tip{display:block;font-family:'Klee One',cursive;font-size:12.5px;color:#684c2e}
+.dots{display:flex;gap:7px;justify-content:center;margin-top:7px}
+.dots i{width:7px;height:7px;border-radius:50%;background:#cdd8b8;cursor:pointer;transition:background .3s,transform .3s}
+.dots i.on{background:#684c2e;transform:scale(1.15)}
+</style>
+</head>
+<body>
+
+<div class="page" style="width: 100%; font-family: 'Zen Maru Gothic', sans-serif; color: #341d0b; line-height: 1.9; letter-spacing: 0.04em">
+
+<header class="topbar"><div class="in">
+<span class="logo"><b>さち</b> <span>sachi</span></span>
+<span class="hbtns"><a class="hb" href="#guide">無料ガイドを受けとる</a><a class="hb ghost" href="https://www.threads.com/@sachi_canva_contents">Threadsを見る</a></span>
+</div></header>
+
+<div class="herowrap">
+<div class="hero">
+<video id="herovid" src="videos/hero.mp4" poster="images/hero16x9.jpg" autoplay muted loop playsinline preload="auto"></video>
+<img class="heromedia" src="images/hero16x9.jpg" alt="窓辺でコーヒーを飲みながら笑顔で在宅ワークするさちのイラスト">
+<div class="scrim"></div>
+<div class="wrapabs"><div class="inner">
+<p class="ey reveal">暮らしと、仕事のあいだ</p>
+<h1 class="reveal">暮らしの延長線上に、<br>小さな仕事を育てる。</h1>
+<p class="sub reveal">Canvaで、暮らしのとなりに小さなストック収入を。<br>パート × フリーランスママの、試行錯誤の記録です。</p>
+</div></div>
+<div class="cue">scroll ↓</div>
+</div>
+</div>
+
+<section style="max-width: 960px; margin: 0 auto; padding: 72px 24px">
+<div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px">
+<span style="font-family: 'Caveat', cursive; font-size: 40px; color: #8baf6b; line-height: 1">1</span>
+<span style="font-family: 'Caveat', cursive; font-size: 20px; color: #684c2e">chapter one</span>
+</div>
+<h2 style="margin: 0 0 32px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 30px; line-height: 1.7">「在宅ワークしたいけど、<br>何からやればいいか分からない」</h2>
+<div style="background: #ffffff; border: 1px solid #dce7d2; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; display: flex; gap: 12px"><span style="color: #8baf6b; font-weight: 700">✓</span><span>Canvaは好き。でも、それを“収入”につなげる方法が分からない。</span></p>
+<p style="margin: 0; display: flex; gap: 12px"><span style="color: #8baf6b; font-weight: 700">✓</span><span>パートや暮らしを大事にしたいから、いきなり独立はやっぱり怖い。</span></p>
+<p style="margin: 0; display: flex; gap: 12px"><span style="color: #8baf6b; font-weight: 700">✓</span><span>小さくていいから、自分のストック収入を育ててみたい。</span></p>
+<p style="margin: 0; display: flex; gap: 12px"><span style="color: #8baf6b; font-weight: 700">✓</span><span>やりたい気持ちはあるのに、“最初の一歩”でずっと止まっている。</span></p>
+</div>
+<p style="margin: 28px 0 0; font-family: 'Klee One', cursive; font-size: 17px; text-align: center">ひとつでも頷いたなら、<br>わたしの試行錯誤が、<br>ヒントになるかもしれません。</p>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 72px 24px">
+<div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px">
+<span style="font-family: 'Caveat', cursive; font-size: 40px; color: #8baf6b; line-height: 1">2</span>
+<span style="font-family: 'Caveat', cursive; font-size: 20px; color: #684c2e">chapter two ・ 大切にしていること</span>
+</div>
+<h2 style="margin: 0 0 12px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 30px; line-height: 1.7">暮らしのひとコマを切り撮り、<br>日常の延長線を描く</h2>
+<p style="margin: 0 0 48px">その根っこにあるのは、3つの思想です。<br>暮らしを崩さないまま、<br>長く続けられる働き方を選びたい。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 40px">
+<div style="flex: 1 1 280px; min-width: 0">
+<figure style="position: relative; margin: 0 0 24px; background: #ffffff; padding: 12px 12px 16px; box-shadow: 0 8px 20px rgba(52,29,11,0.10); transform: rotate(-1.5deg)">
+<div aria-hidden="true" style="position: absolute; top: -14px; left: 24px; width: 90px; height: 28px; background: rgba(206,216,172,0.8); transform: rotate(-6deg)"></div>
+<img class="slotimg" style="aspect-ratio: 4 / 3" src="images/ch2a.jpg" alt="パソコンとメガネで、暮らしのそばで働くさち">
+</figure>
+<p style="margin: 0; font-family: 'Caveat', cursive; font-size: 22px; color: #8baf6b">01</p>
+<h3 style="margin: 0 0 8px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 20px">暮らしを、まんなかに置く</h3>
+<p style="margin: 0; font-size: 15px">働き方や収入の前に、まず暮らしがある。<br>睡眠や心の余白を削らない範囲で積み重ねる。<br>それが、わたしの順番です。</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0">
+<figure style="position: relative; margin: 0 0 24px; background: #ffffff; padding: 12px 12px 16px; box-shadow: 0 8px 20px rgba(52,29,11,0.10); transform: rotate(1.2deg)">
+<div aria-hidden="true" style="position: absolute; top: -14px; left: 50%; margin-left: -45px; width: 90px; height: 28px; background: rgba(224,141,55,0.25); transform: rotate(3deg)"></div>
+<img class="slotimg" style="aspect-ratio: 4 / 3" src="images/ch2b.jpg" alt="机で作業する女性">
+</figure>
+<p style="margin: 0; font-family: 'Caveat', cursive; font-size: 22px; color: #8baf6b">02</p>
+<h3 style="margin: 0 0 8px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 20px">ないなら、つくってみる</h3>
+<p style="margin: 0; font-size: 15px">合う素材がないからMidjourneyを始め、<br>欲しい管理の形がないからNotionで作る。<br>既製品に自分を合わせず、暮らしに合う形を作ります。</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0">
+<figure style="position: relative; margin: 0 0 24px; background: #ffffff; padding: 12px 12px 16px; box-shadow: 0 8px 20px rgba(52,29,11,0.10); transform: rotate(-0.8deg)">
+<div aria-hidden="true" style="position: absolute; top: -14px; right: 24px; width: 90px; height: 28px; background: rgba(220,231,210,0.95); transform: rotate(5deg)"></div>
+<img class="slotimg" style="aspect-ratio: 4 / 3" src="images/ch2c.jpg" alt="マグカップを両手で持つさちの横顔">
+</figure>
+<p style="margin: 0; font-family: 'Caveat', cursive; font-size: 22px; color: #8baf6b">03</p>
+<h3 style="margin: 0 0 8px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 20px">無理なく、続くカタチで</h3>
+<p style="margin: 0; font-size: 15px">短期で結果を出すより、<br>日常の延長線上で長く育てる道を選ぶ。<br>「暮らしを崩さず、仕事を育てる」が、<br>わたしの働き方の軸です。</p>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 72px 24px">
+<div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px">
+<span style="font-family: 'Caveat', cursive; font-size: 40px; color: #8baf6b; line-height: 1">3</span>
+<span style="font-family: 'Caveat', cursive; font-size: 20px; color: #684c2e">chapter three ・ 発信していること</span>
+</div>
+<h2 style="margin: 0 0 40px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 30px; line-height: 1.7">暮らしをまんなかに、<br>3つの旗を立てています。</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+<div style="background: #ffffff; border-radius: 16px; padding: 28px; border: 1px solid #dce7d2">
+<p style="margin: 0 0 4px; font-family: 'Caveat', cursive; font-size: 22px; color: #684c2e">morning</p>
+<h3 style="margin: 0 0 12px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 22px">朝活</h3>
+<p style="margin: 0; font-size: 15px">Threadsの「おはさち」と、<br>スタエフの朝活ラジオ『キッチンの片隅から』で、<br>朝の自分時間をゆるりと分かち合っています。</p>
+</div>
+<div style="background: #ffffff; border-radius: 16px; padding: 28px; border: 1px solid #dce7d2">
+<p style="margin: 0 0 4px; font-family: 'Caveat', cursive; font-size: 22px; color: #684c2e">ai art</p>
+<h3 style="margin: 0 0 12px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 22px">AIアート</h3>
+<p style="margin: 0; font-size: 15px">Midjourneyで、自分の世界観に合う絵をつくっています。<br>このページの絵も、わたしがつくったものです。</p>
+</div>
+<div style="background: #ffffff; border-radius: 16px; padding: 28px; border: 1px solid #dce7d2">
+<p style="margin: 0 0 4px; font-family: 'Caveat', cursive; font-size: 22px; color: #684c2e">home business</p>
+<h3 style="margin: 0 0 12px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 22px">おうちビジネス</h3>
+<p style="margin: 0; font-size: 15px">CanvaとNotion、noteで、<br>暮らしに馴染む小さな商品と、<br>届けるまでの道をととのえています。</p>
+</div>
+</div>
+</section>
+
+<!-- ===== 朝活ラジオ（stand.fm）feature ===== -->
+<section style="background: #f3ece0; border-top: 1px solid #e6dcc8; border-bottom: 1px solid #e6dcc8">
+<div style="max-width: 1120px; margin: 0 auto; padding: 68px 24px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 44px">
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0 0 6px; font-family: 'Caveat', cursive; font-size: 24px; color: #8baf6b">morning radio ☕</p>
+<h2 style="margin: 0 0 20px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 29px; line-height: 1.6">毎朝5時、コーヒー1杯分の<br>「朝活ラジオ」をひらいています。</h2>
+<p style="margin: 0 0 14px; font-size: 15px; line-height: 2">stand.fmで配信している、<br><b>『さちの朝活ラジオ ☕ キッチンの片隅から』</b>。<br>毎日5時スタート、約30分。<br>コーヒーを淹れるみたいに、<br>ゆるりと一日をはじめる時間です。</p>
+<p style="margin: 0 0 28px; font-size: 15px; line-height: 2">「暮らしのひとコマを切り撮り、日常の延長線を描く」。<br>おしゃべりでもその景色を、<br>あなたと一緒に描けたらうれしいです。</p>
+<a href="https://stand.fm/channels/69930a2e501f23e00742252e" style="display: inline-block; padding: 14px 32px; border-radius: 999px; background: #684c2e; color: #ffffff; font-weight: 500; font-size: 15px">朝活ラジオを聴く →</a>
+</div>
+<div style="flex: 0 1 340px; min-width: 240px">
+<figure style="margin: 0; position: relative; border-radius: 20px; overflow: hidden; border: 1px solid #e6dcc8; box-shadow: 0 14px 34px rgba(104,76,46,.14)">
+<img src="images/radio.jpg" alt="ヘッドホンをつけ、コーヒー片手に朝活ラジオを配信するさち" style="display: block; width: 100%; height: auto">
+<figcaption style="position: absolute; left: 0; right: 0; bottom: 0; padding: 16px 18px; background: linear-gradient(0deg, rgba(40,24,8,.66), rgba(40,24,8,0)); color: #fff; font-family: 'Klee One', cursive; font-size: 14px; letter-spacing: .04em; text-shadow: 0 1px 8px rgba(0,0,0,.45)">☕ さちの朝活ラジオ</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 24px 24px 80px">
+<div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px">
+<span style="font-family: 'Caveat', cursive; font-size: 40px; color: #8baf6b; line-height: 1">works</span>
+<span style="font-family: 'Caveat', cursive; font-size: 20px; color: #684c2e">・ つくっている世界</span>
+</div>
+<h2 style="margin: 0 0 12px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 30px; line-height: 1.7">このページの絵は、ぜんぶ<br>わたしがつくったAIアートです。</h2>
+<p style="margin: 0 0 40px">「合う素材がないなら、つくってみる」。<br>Midjourneyで、暮らしの景色から自分の世界観に合う一枚を起こしています。</p>
+<div class="works-gal">
+<figure class="wk" style="margin:0 0 20px"><div class="ph"><img src="images/g1.jpg" alt="コーヒーを持って笑顔"></div><figcaption>コーヒー片手に、にっこり</figcaption></figure>
+<figure class="wk" style="margin:0 0 20px"><div class="ph"><img src="images/g2.jpg" alt="マグを抱えて笑顔"></div><figcaption>あったかいマグを、両手で</figcaption></figure>
+<figure class="wk" style="margin:0 0 20px"><div class="ph"><img src="images/g3.jpg" alt="カフェで大笑い"></div><figcaption>カフェで、大笑い</figcaption></figure>
+<figure class="wk" style="margin:0 0 20px"><div class="ph"><img src="images/g4.jpg" alt="マグを持って微笑む"></div><figcaption>マグを持って、ひと休み</figcaption></figure>
+<figure class="wk" style="margin:0 0 20px"><div class="ph"><img src="images/g5.jpg" alt="マグに顔をうずめて笑顔"></div><figcaption>湯気の向こうで、ほっ</figcaption></figure>
+<figure class="wk" style="margin:0 0 20px"><div class="ph"><img src="images/g6.jpg" alt="満面の笑み"></div><figcaption>思わず、満面の笑み</figcaption></figure>
+<figure class="wk" style="margin:0 0 20px"><div class="ph"><img src="images/g7.jpg" alt="カフェで笑い合う"></div><figcaption>話がはずんで、くすくす</figcaption></figure>
+<figure class="wk" style="margin:0 0 20px"><div class="ph"><img src="images/g8.jpg" alt="キッチンテーブルで笑顔"></div><figcaption>キッチンの朝、にっこり</figcaption></figure>
+</div>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; justify-content: center">
+<figure style="position: relative; margin: 0; width: 100%; max-width: 400px; background: #ffffff; padding: 14px 14px 18px; box-shadow: 0 10px 26px rgba(52,29,11,0.12); transform: rotate(-2deg)">
+<div aria-hidden="true" style="position: absolute; top: -16px; left: 50%; margin-left: -60px; width: 120px; height: 32px; background: rgba(206,216,172,0.8); transform: rotate(3deg)"></div>
+<img class="slotimg" style="aspect-ratio: 1 / 1" src="images/ch4.jpg" alt="ノートパソコンに向かって笑う女性と猫">
+<figcaption style="margin-top: 12px; font-family: 'Klee One', cursive; font-size: 14px; color: #684c2e; text-align: center">“暮らしが整うと、考えも、動きも整う。”</figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 440px; min-width: 0">
+<div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px">
+<span style="font-family: 'Caveat', cursive; font-size: 40px; color: #8baf6b; line-height: 1">4</span>
+<span style="font-family: 'Caveat', cursive; font-size: 20px; color: #684c2e">chapter four ・ わたしのこと</span>
+</div>
+<h2 style="margin: 0 0 24px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 30px; line-height: 1.7">暮らしが整うと、<br>考えも、動きも整う。</h2>
+<p style="margin: 0 0 16px">子どもとの時間も、自分の暮らしも手放さずに働きたい。<br>そう思って、動きはじめました。</p>
+<p style="margin: 0 0 16px">もともとは整理収納アドバイザーとして、<br>「暮らしを整えること」を仕事にしてきました。<br>パートと子育て、家事を回す毎日の中で実感したのは——<br>暮らしが後回しになると、心の余白までなくなって、<br>やりたいことも止まってしまうこと。<br>逆に、暮らしをちょっと整えるだけで、<br>考えも、次の一歩も、不思議と軽くなる。<br>そんな小さな実感を、何度も重ねてきました。</p>
+<p style="margin: 0 0 16px">だから仕事も、暮らしを削って頑張るのではなく、<br>暮らしの延長線上で育てたい。自分のごきげんも、手放さずに。</p>
+<p style="margin: 0">すごい実績のある先生ではありません。<br>でも、同じところで足踏みしている人の<br>「最初の詰まり」を、となりでそっとほどくことならできる。<br>そう思って、発信しています。</p>
+</div>
+</section>
+
+<section id="guide" style="max-width: 960px; margin: 0 auto; padding: 72px 24px">
+<div style="position: relative; background: #ffffff; border-radius: 20px; padding: 48px 32px; text-align: center; box-shadow: 0 10px 26px rgba(52,29,11,0.08)">
+<div aria-hidden="true" style="position: absolute; top: -14px; left: 40px; width: 100px; height: 28px; background: rgba(224,141,55,0.28); transform: rotate(-5deg)"></div>
+<div aria-hidden="true" style="position: absolute; top: -14px; right: 40px; width: 100px; height: 28px; background: rgba(206,216,172,0.8); transform: rotate(4deg)"></div>
+<p style="margin: 0 0 8px; font-family: 'Caveat', cursive; font-size: 22px; color: #684c2e">free guide</p>
+<h2 style="margin: 0 0 16px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 28px; line-height: 1.7">まずは、無料ガイドから。</h2>
+<p style="margin: 0 0 8px; font-family: 'Zen Old Mincho', serif; font-size: 20px">ママのためのSNSデザイン × デジタルコンテンツ販売 スターターブック</p>
+<p style="margin: 0 0 28px; font-size: 15px; color: #684c2e">「全体像がわかれば、小さく始められる」。<br>最初の一歩をまとめた、全25ページ（PDF）。</p>
+<a href="https://drive.google.com/file/d/1azT8IvKoc8P0abR9aaCMXeckoTkdryd1/view?usp=sharing" target="_blank" rel="noopener" style="display: inline-block; padding: 14px 32px; border-radius: 999px; background: #684c2e; color: #ffffff; text-decoration: none; font-weight: 500">無料ガイドを受けとる</a>
+</div>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 72px 24px">
+<div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px">
+<span style="font-family: 'Caveat', cursive; font-size: 40px; color: #8baf6b; line-height: 1">5</span>
+<span style="font-family: 'Caveat', cursive; font-size: 20px; color: #684c2e">chapter five ・ 商品</span>
+</div>
+<h2 style="margin: 0 0 40px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 30px; line-height: 1.7">「ここを見ればいい」を、<br>お渡しします。</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center; background: #ffffff; border-radius: 20px; padding: 40px; border: 1px solid #dce7d2">
+<div style="flex: 1 1 300px; min-width: 0">
+<figure style="position: relative; margin: 0; background: #ffffff; padding: 12px 12px 16px; box-shadow: 0 8px 20px rgba(52,29,11,0.10); transform: rotate(-1.5deg)">
+<div aria-hidden="true" style="position: absolute; top: -14px; left: 50%; margin-left: -50px; width: 100px; height: 28px; background: rgba(220,231,210,0.95); transform: rotate(-3deg); z-index: 2"></div>
+<div class="caro" id="packCaro">
+<img src="images/ch5.jpg" alt="Digital Contents Debut Pack の中身①">
+<img src="images/ch5b.jpg" alt="Digital Contents Debut Pack の中身②">
+<img src="images/ch5c.jpg" alt="Digital Contents Debut Pack の中身③">
+</div>
+<figcaption class="caro-hint"><span class="tip">← スワイプで中身をもっと見る →</span><span class="dots" id="packDots"><i class="on"></i><i></i><i></i></span></figcaption>
+</figure>
+</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<p style="margin: 0 0 4px; font-family: 'Caveat', cursive; font-size: 22px; color: #684c2e">main product</p>
+<h3 style="margin: 0 0 16px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 26px">Digital Contents Debut Pack</h3>
+<p style="margin: 0 0 12px; font-family: 'Klee One', cursive; color: #684c2e">AIアートで「私の世界観」をつくる、7日間講座つき</p>
+<p style="margin: 0 0 24px">日常の延長線で作れる、私だけの商品。ゼロからじゃない。<br>ストック収入のひな型8割版に、“私らしさ”をのせて仕上げるだけ。</p>
+<a href="https://note.com/sachi_contents/n/nd116e1365376" target="_blank" rel="noopener" style="display: inline-block; padding: 14px 28px; border-radius: 999px; background: #684c2e; color: #ffffff; text-decoration: none; font-weight: 500">くわしく見る（note）</a>
+</div>
+</div>
+
+<div style="margin-top: 32px; border: 2px dashed #ced8ac; border-radius: 20px; padding: 32px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center">
+<div style="flex: 1 1 300px; min-width: 0">
+<p style="margin: 0 0 4px; font-family: 'Caveat', cursive; font-size: 22px; color: #684c2e">minne shop</p>
+<h3 style="margin: 0 0 8px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 20px">ミンネのお店</h3>
+<p style="margin: 0; font-size: 15px; color: #684c2e">ただいま準備中です。<br>近日アップデート予定。</p>
+</div>
+<span style="padding: 8px 20px; border-radius: 999px; background: #dce7d2; font-family: 'Klee One', cursive; font-size: 14px">coming soon</span>
+</div>
+
+<div style="margin-top: 56px">
+<p style="margin: 0 0 16px; font-family: 'Klee One', cursive; font-size: 16px; color: #684c2e">これまでのサポートも、続けています</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<a href="https://test-lp-0923.my.canva.site/sachi-style/" style="display: block; background: #ffffff; border: 1px solid #dce7d2; border-radius: 14px; padding: 20px; text-decoration: none; color: #341d0b">
+<span style="display: block; font-weight: 700; margin-bottom: 4px">デザイン添削</span>
+<span style="display: block; font-size: 14px; line-height: 1.8">あなたのCanvaデザインを、「ここを直せばいい」が分かる形でフィードバック。</span>
+</a>
+<a href="https://test-lp-0923.my.canva.site/sachi-style/" style="display: block; background: #ffffff; border: 1px solid #dce7d2; border-radius: 14px; padding: 20px; text-decoration: none; color: #341d0b">
+<span style="display: block; font-weight: 700; margin-bottom: 4px">Instagram投稿サポート</span>
+<span style="display: block; font-size: 14px; line-height: 1.8">「何を投稿すればいい？」「続かない」を一緒に整理。</span>
+</a>
+<a href="https://test-lp-0923.my.canva.site/sachi-style/" style="display: block; background: #ffffff; border: 1px solid #dce7d2; border-radius: 14px; padding: 20px; text-decoration: none; color: #341d0b">
+<span style="display: block; font-weight: 700; margin-bottom: 4px">再販コンテンツサービス</span>
+<span style="display: block; font-size: 14px; line-height: 1.8">ゼロから作らなくていい、最初の一歩を軽くする仕組み。</span>
+</a>
+</div>
+<p style="margin: 20px 0 0"><a href="https://test-lp-0923.my.canva.site/sachi-style/" style="display: inline-block; padding: 12px 26px; border-radius: 999px; border: 1px solid #684c2e; color: #684c2e; text-decoration: none; font-weight: 500; font-size: 14px; background: #ffffff">料金・詳細はこちら →</a></p>
+</div>
+</section>
+
+<section style="max-width: 960px; margin: 0 auto; padding: 72px 24px">
+<div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 24px">
+<span style="font-family: 'Caveat', cursive; font-size: 40px; color: #8baf6b; line-height: 1">6</span>
+<span style="font-family: 'Caveat', cursive; font-size: 20px; color: #684c2e">chapter six ・ プロフィール</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+<figure style="position: relative; margin: 0; flex: 0 0 200px; background: #ffffff; padding: 10px 10px 14px; box-shadow: 0 8px 20px rgba(52,29,11,0.10); transform: rotate(2deg)">
+<div aria-hidden="true" style="position: absolute; top: -12px; left: 50%; margin-left: -40px; width: 80px; height: 24px; background: rgba(224,141,55,0.28); transform: rotate(-4deg)"></div>
+<img class="slotimg" style="aspect-ratio: 1 / 1" src="images/profile.jpg" alt="さちのプロフィール">
+</figure>
+<div style="flex: 1 1 360px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 26px">さち</h3>
+<p style="margin: 0 0 16px; font-size: 14px"><a href="https://www.threads.com/@sachi_canva_contents">@sachi_canva_contents</a></p>
+<p style="margin: 0 0 16px">インドア派で、大好きな家にいながら働きたい。<br><br>そんな想いから、<br>パートと掛け持ちでSNSデザイナーとして歩いてきました。<br>そこで出会ったのが、デジタルコンテンツ販売。<br>Canva・Notionで積み重ねた「整える力」が、<br>そのまま活かせると気づいたんです。<br>絵は描けないけれど、<br>Midjourneyで「描きたい世界」を映しはじめました。<br><br>朝4時起きの朝活から、<br>暮らしも家族も大切にする無理のない働き方を、<br>コツコツ育てています。<br>同じように頑張るあなたに、そっと寄り添えたら。</p>
+</div>
+</div>
+</section>
+
+<section style="max-width: 960px; margin: 0 auto; padding: 72px 24px 96px; text-align: center">
+<p style="margin: 0 0 8px; font-family: 'Caveat', cursive; font-size: 22px; color: #684c2e">let's connect</p>
+<h2 style="margin: 0 0 16px; font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: 28px; line-height: 1.7">Threadsから、地続きの場所へ。</h2>
+<p style="margin: 0 0 32px">「この人になら相談してみたいな」。そう思ってもらえたら、うれしいです。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 64px">
+<a href="https://www.threads.com/@sachi_canva_contents" style="display: inline-block; padding: 13px 27px; border-radius: 999px; border: 1px solid #684c2e; background: #ffffff; text-decoration: none">Threads ・ 毎日の試行錯誤</a>
+<a href="https://note.com/sachi_contents" style="display: inline-block; padding: 13px 27px; border-radius: 999px; border: 1px solid #684c2e; background: #ffffff; text-decoration: none">note ・ 考えと商品</a>
+</div>
+<p style="margin: 0 0 16px; font-family: 'Zen Old Mincho', serif; font-size: 22px; line-height: 1.8">完璧じゃなくても、続けられる。<br>8割でも、前に進める。</p>
+<p style="margin: 0 0 12px; font-family: 'Klee One', cursive; font-size: 16px; line-height: 2">Canvaで詰まったとき、在宅ワークで迷ったとき。<br>「あ、さちさんアレ得意だったよね？」<br>そう思い出してもらえる、親戚のおばちゃんみたいな存在に。</p>
+<p style="margin: 0; font-family: 'Klee One', cursive; color: #684c2e">— さち</p>
+</section>
+
+<footer style="border-top: 1px solid #dce7d2; padding: 24px; text-align: center; font-size: 13px; color: #684c2e">© 2026 さち（sachi）— 暮らしの延長線上に、小さな仕事を育てる。</footer>
+
+</div>
+<script>
+(function(){var v=document.getElementById('herovid');if(!v)return;var S=0.5;function set(){v.playbackRate=S;}set();v.addEventListener('loadedmetadata',set);if(v.play){var p=v.play();if(p&&p.catch)p.catch(function(){});}})();
+(function(){var c=document.getElementById('packCaro'),d=document.getElementById('packDots');if(!c||!d)return;var dots=[].slice.call(d.querySelectorAll('i'));function setOn(j){dots.forEach(function(x,k){x.classList.toggle('on',k===j);});}dots.forEach(function(x,j){x.onclick=function(){c.scrollTo({left:j*c.clientWidth,behavior:'smooth'});};});var raf;c.addEventListener('scroll',function(){if(raf)cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){setOn(Math.round(c.scrollLeft/c.clientWidth));});},{passive:true});setOn(0);})();
+</script>
+</body>
+</html>
